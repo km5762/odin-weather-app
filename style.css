@@ -40,6 +40,7 @@ header .logo {
 .search svg {
   max-height: 1.3em;
   color: #e4e6eb;
+  cursor: pointer;
 }
 
 section {
@@ -49,6 +50,7 @@ section {
 
 .weather-card {
   margin-top: 5em;
+  margin-left: 1.85em;
   padding: 1em 3em;
   background-color: #242526;
   display: none;

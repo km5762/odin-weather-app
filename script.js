@@ -32,11 +32,11 @@ async function renderWeatherAt(location) {
     weatherCard.style.display = "flex";
     city.textContent = weather.location.name;
     condition.textContent = weather.current.condition.text;
-    temperature.textContent = `Temperature: ${weather.current.temp_f}`;
-    feelsLike.textContent = `Feels like: ${weather.current.feelslike_f}`;
-    wind.textContent = `Wind speed: ${weather.current.wind_mph}`;
+    temperature.textContent = `Temperature: ${weather.current.temp_f}° F`;
+    feelsLike.textContent = `Feels like: ${weather.current.feelslike_f}° F`;
+    wind.textContent = `Wind speed: ${weather.current.wind_mph} mph`;
     humidity.textContent = `Humidity ${weather.current.humidity}`;
-    percipitation.textContent = `Precipitation: ${weather.current.precip_in}`;
+    percipitation.textContent = `Precipitation: ${weather.current.precip_in} in`;
   } catch {
     weatherCard.style.display = "flex";
     city.textContent = `City "${location}" not found`;
