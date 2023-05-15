@@ -2,18 +2,71 @@ html {
   background-color: #18191a;
 }
 
+:root {
+  font-family: "Roboto";
+  color: #e4e6eb;
+}
+
 header {
   background-color: #242526;
-  padding: 1.5em;
+  padding: 1.5em 0em 1.5em 0em;
   color: #e4e6eb;
   text-align: center;
-  font-family: "Roboto";
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-header svg {
+header .logo {
   filter: drop-shadow(0 0 20px white);
   height: 1.5em;
   color: #9965f4;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+  margin-left: 2.6em;
+}
+
+.search input {
+  padding-left: 1em;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.search svg {
+  max-height: 1.3em;
+  color: #e4e6eb;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.weather-card {
+  margin-top: 5em;
+  padding: 1em 3em;
+  background-color: #242526;
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 20px;
+}
+
+.weather-card h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.weather-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.weather-card p {
+  font-size: 1.3em;
 }
