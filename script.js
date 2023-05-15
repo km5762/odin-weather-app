@@ -5,6 +5,12 @@ search.addEventListener("click", () => {
   renderWeatherAt(searchBar.value);
 });
 
+searchBar.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    renderWeatherAt(searchBar.value);
+  }
+});
+
 async function getWeatherAt(location) {
   const url =
     "https://api.weatherapi.com/v1/current.json?key=e137765b2150444d9f332519231305&q=";
